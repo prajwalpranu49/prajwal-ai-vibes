@@ -41,7 +41,8 @@ export function AIChat() {
       {/* Floating toggle */}
       <button
         onClick={() => setOpen(!open)}
-        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full border border-border bg-card shadow-glow transition-all hover:scale-105"
+        style={{ boxShadow: "var(--shadow-glow)" }}
+        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full border border-border bg-card transition-all hover:scale-105"
         aria-label={open ? "Close chat" : "Open AI chat"}
       >
         {open ? (
