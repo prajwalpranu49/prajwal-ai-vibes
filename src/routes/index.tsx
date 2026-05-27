@@ -4,6 +4,7 @@ import { Marquee } from "@/components/portfolio/Marquee";
 import { Pillars } from "@/components/portfolio/Pillars";
 import { WorkGrid } from "@/components/portfolio/WorkGrid";
 import { Footer } from "@/components/portfolio/Footer";
+import { AIChat } from "@/components/portfolio/AIChat";
 
 export const Route = createFileRoute("/")({
   head: () => ({
