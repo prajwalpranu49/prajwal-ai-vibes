@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Prajwal Pranu" },
+      { name: "description", content: "Showcases AI creation, viral edits, and cinematic visuals through a dynamic portfolio website." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Prajwal Pranu" },
+      { property: "og:description", content: "Showcases AI creation, viral edits, and cinematic visuals through a dynamic portfolio website." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Prajwal Pranu" },
+      { name: "twitter:description", content: "Showcases AI creation, viral edits, and cinematic visuals through a dynamic portfolio website." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/qZ509ZZWfXSi14jwqndIsLqqCsY2/social-images/social-1779901077461-ChatGPT_Image_May_27,_2026,_10_27_38_PM.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/qZ509ZZWfXSi14jwqndIsLqqCsY2/social-images/social-1779901077461-ChatGPT_Image_May_27,_2026,_10_27_38_PM.webp" },
     ],
     links: [
       {
