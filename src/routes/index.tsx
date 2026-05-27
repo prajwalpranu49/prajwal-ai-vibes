@@ -26,6 +26,7 @@ function Index() {
       <Pillars />
       <WorkGrid />
       <Footer />
+      <AIChat />
     </main>
   );
 }
