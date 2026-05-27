@@ -60,7 +60,10 @@ export function AIChat() {
 
       {/* Chat panel */}
       {open && (
-        <div className="fixed bottom-24 right-6 z-50 flex w-[360px] max-w-[calc(100vw-48px)] flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-glow">
+        <div
+          style={{ boxShadow: "var(--shadow-glow)" }}
+          className="fixed bottom-24 right-6 z-50 flex w-[360px] max-w-[calc(100vw-48px)] flex-col overflow-hidden rounded-2xl border border-border bg-card"
+        >
           {/* Header */}
           <div className="flex items-center gap-3 border-b border-border px-5 py-4">
             <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/20">
