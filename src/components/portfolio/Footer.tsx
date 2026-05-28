@@ -4,7 +4,6 @@ const links = [
   { label: "Instagram", href: "#" },
   { label: "YouTube", href: "#" },
   { label: "X / Twitter", href: "#" },
-  { label: "Email", href: "mailto:hello@prajwalpranu.com" },
 ];
 
 export function Footer() {
@@ -31,7 +30,7 @@ export function Footer() {
               hello@prajwalpranu.com
             </a>
           </div>
-          <ul className="grid grid-cols-2 gap-4">
+          <ul className="grid grid-cols-1 gap-4 md:grid-cols-3">
             {links.map((l) => (
               <li key={l.label}>
                 <a
