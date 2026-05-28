@@ -1,37 +1,24 @@
-## Portfolio for Prajwal Pranu
+## Changes
 
-A single-page, cinematic portfolio with a bold AI/tech aesthetic — think dark canvas, gradient mesh accents, mono+display type, restrained motion. The uploaded video plays at the very top as the hero.
+### 1. Top nav (HeroVideo.tsx)
+- Remove the "Prajwal // Pranu" wordmark on the left.
+- Replace nav with: Home, About Us, Products / Services, Blogs, Contact Us.
+- Links scroll to existing sections where possible: Home → `#top`, About Us → `#about`, Products / Services → `#work`, Contact Us → `#contact`. Blogs → `#blogs` (placeholder anchor; no new page in this pass).
+- Keep the mute toggle on the right; move nav to center for balance.
+- On mobile (small viewport), collapse nav into a simple hamburger menu (since the viewport is 458px wide).
 
-### Sections (single page, smooth scroll)
+### 2. Work grid imagery (WorkGrid.tsx + new assets)
+- Generate 4 cinematic AI-styled images, one per work card, saved in `src/assets/`:
+  - `work-synthetic-dreams.jpg` — surreal AI dreamscape, violet/cyan glow
+  - `work-neon-hours.jpg` — neon-lit night city, magenta/teal
+  - `work-prompt-diaries.jpg` — abstract typographic / terminal-inspired visual
+  - `work-after-midnight.jpg` — moody cinematic portrait with motion blur
+- Import each in `WorkGrid.tsx`, render as a background `<img>` behind the existing gradient overlay so text stays legible.
+- Keep current card layout, hover glow, and overlay gradient.
 
-1. **Hero** — Full-bleed autoplaying (muted, loop, playsInline) video of you working on the AI Creator. Overlaid: name "Prajwal Pranu", role tagline, scroll cue. Click-to-unmute control in the corner.
-2. **About** — Short intro paragraph + key stats/marquee of tools (placeholder copy you can edit later).
-3. **Three pillars** — Equal-weight cards for:
-   - AI Creator
-   - Viral Edits & Creative Visuals
-   - Cinematic Vibes
-4. **Selected Work** — Grid placeholder for future projects/reels.
-5. **Contact / Footer** — Email + social links (placeholders).
+### 3. Footer (Footer.tsx)
+- Remove the "Email" item from the social links grid under "Reach out".
+- Keep Instagram, YouTube, X / Twitter (3 items). Adjust grid to `grid-cols-3` on desktop, `grid-cols-1` on mobile.
+- Keep the large `hello@prajwalpranu.com` mailto headline intact.
 
-### Design direction
-
-- Dark theme, near-black background with subtle gradient mesh / noise texture.
-- Display font: a modern geometric (e.g. Space Grotesk) for headings; Inter for body; JetBrains Mono accents for labels.
-- Accent: electric violet → cyan gradient on key elements.
-- Generous spacing, sharp corners on cards, soft glow on hover.
-- Motion: fade/slide-in on scroll, subtle parallax on hero, no heavy effects.
-
-### Technical details
-
-- Copy `user-uploads://Prajwal_works_on_Al_Creator_202605272138.mp4` into `public/hero.mp4` so it streams directly.
-- Replace placeholder content in `src/routes/index.tsx` with the new portfolio composition.
-- Define color tokens (dark palette, gradient vars, glow shadow) in `src/styles.css` using oklch.
-- Build small components under `src/components/portfolio/` (HeroVideo, Pillars, WorkGrid, Footer).
-- Update route head() with proper SEO title/description ("Prajwal Pranu — AI Creator, Viral Edits, Cinematic Visuals").
-- Use semantic tokens only, no hardcoded colors in components.
-
-### Not included (ask later if needed)
-
-- Real project entries / images (placeholders shown).
-- CMS or backend.
-- Multi-page routing (single page is enough for a portfolio of this scope).
+No other sections, routes, or backend logic change.
