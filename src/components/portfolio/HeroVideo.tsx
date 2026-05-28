@@ -28,14 +28,14 @@ export function HeroVideo() {
 
       {/* top bar */}
       <div className="absolute inset-x-0 top-0 z-10 flex items-center justify-between px-6 py-6 md:px-12">
-        <div className="font-mono-accent text-xs uppercase tracking-[0.3em] text-muted-foreground">
-          Prajwal // Pranu
-        </div>
-        <nav className="hidden gap-8 font-mono-accent text-xs uppercase tracking-[0.25em] text-muted-foreground md:flex">
-          <a href="#work" className="hover:text-foreground transition-colors">Work</a>
-          <a href="#about" className="hover:text-foreground transition-colors">About</a>
-          <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
+        <nav className="hidden flex-1 justify-center gap-8 font-mono-accent text-xs uppercase tracking-[0.25em] text-muted-foreground md:flex">
+          <a href="#top" className="hover:text-foreground transition-colors">Home</a>
+          <a href="#about" className="hover:text-foreground transition-colors">About Us</a>
+          <a href="#work" className="hover:text-foreground transition-colors">Products / Services</a>
+          <a href="#blogs" className="hover:text-foreground transition-colors">Blogs</a>
+          <a href="#contact" className="hover:text-foreground transition-colors">Contact Us</a>
         </nav>
+        <div className="md:hidden" />
         <button
           onClick={toggleMute}
           aria-label={muted ? "Unmute video" : "Mute video"}
