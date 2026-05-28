@@ -34,7 +34,7 @@ export function HeroVideo() {
           <a href="#about" className="hover:text-foreground transition-colors">About Us</a>
           <a href="#work" className="hover:text-foreground transition-colors">Products / Services</a>
           <a href="#blogs" className="hover:text-foreground transition-colors">Blogs</a>
-          <a href="#contact" className="hover:text-foreground transition-colors">Contact Us</a>
+          <Link to="/contact" className="hover:text-foreground transition-colors">Contact Us</Link>
         </nav>
         <div className="md:hidden" />
         <button
