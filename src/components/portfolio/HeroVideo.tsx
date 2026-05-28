@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { Volume2, VolumeX } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 
 export function HeroVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
