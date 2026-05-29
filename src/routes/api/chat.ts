@@ -19,7 +19,7 @@ const PartSchema = z.union([
 
 const MessageSchema = z.object({
   id: z.string().max(128).optional(),
-  role: z.enum(["system", "user", "assistant"]),
+  role: z.enum(["user", "assistant"]),
   parts: z.array(PartSchema).min(1).max(20),
 });
 
