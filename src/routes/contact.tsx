@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft, Send, Instagram, Youtube, Twitter, Sparkles, Wand2, Film, Mail, MapPin } from "lucide-react";
+import { ArrowLeft, Send, Instagram, Youtube, Twitter, AtSign, Sparkles, Wand2, Film, Mail, MapPin } from "lucide-react";
 import { useState } from "react";
 
 export const Route = createFileRoute("/contact")({
@@ -18,14 +18,15 @@ const navLinks = [
   { label: "Home", to: "/" },
   { label: "About Us", to: "/#about" },
   { label: "Products / Services", to: "/#work" },
-  { label: "Blogs", to: "/#blogs" },
+  { label: "Blogs", to: "/blogs" },
   { label: "Contact Us", to: "/contact" },
 ];
 
 const socialLinks = [
-  { label: "Instagram", href: "#", icon: Instagram },
-  { label: "YouTube", href: "#", icon: Youtube },
-  { label: "X / Twitter", href: "#", icon: Twitter },
+  { label: "Instagram", href: "https://www.instagram.com/prajwal_ai_vibes/", icon: Instagram },
+  { label: "YouTube", href: "https://www.youtube.com/@prajwalpranu", icon: Youtube },
+  { label: "X / Twitter", href: "https://x.com/prajwal_ai_vibe", icon: Twitter },
+  { label: "Threads", href: "https://www.threads.com/@prajwal_ai_vibes", icon: AtSign },
 ];
 
 const pillars = [
@@ -63,7 +64,7 @@ function ContactPage() {
   return (
     <main className="relative min-h-screen bg-background text-foreground">
       {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-border/40 bg-background/80 backdrop-blur-md">
+      <header className="fixed inset-x-0 top-0 z-50 border-b border-border/40 bg-background/80 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-12">
           <Link
             to="/"
@@ -94,7 +95,7 @@ function ContactPage() {
       </header>
 
       {/* Hero */}
-      <section className="relative px-6 pt-20 pb-16 md:px-12 md:pt-32 md:pb-24">
+      <section className="relative px-6 pt-32 pb-16 md:px-12 md:pt-40 md:pb-24">
         <div className="absolute inset-0 bg-mesh opacity-40" />
         <div className="relative mx-auto max-w-7xl">
           <div className="font-mono-accent text-xs uppercase tracking-[0.3em] text-accent">
@@ -167,10 +168,10 @@ function ContactPage() {
                       Email
                     </div>
                     <a
-                      href="mailto:hello@prajwalpranu.com"
+                      href="mailto:prajwalpranu49@yahoo.com"
                       className="font-display mt-1 block text-lg hover:text-gradient"
                     >
-                      hello@prajwalpranu.com
+                      prajwalpranu49@yahoo.com
                     </a>
                   </div>
                 </div>
@@ -198,6 +199,8 @@ function ContactPage() {
                     <a
                       key={label}
                       href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       aria-label={label}
                       className="flex h-11 w-11 items-center justify-center rounded-xl border border-border bg-card transition hover:border-primary/60 hover:text-accent"
                     >
