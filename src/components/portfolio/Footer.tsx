@@ -1,9 +1,10 @@
 import { ArrowUpRight } from "lucide-react";
 
 const links = [
-  { label: "Instagram", href: "#" },
-  { label: "YouTube", href: "#" },
-  { label: "X / Twitter", href: "#" },
+  { label: "Instagram", href: "https://www.instagram.com/prajwal_ai_vibes/" },
+  { label: "YouTube", href: "https://www.youtube.com/@prajwalpranu" },
+  { label: "X / Twitter", href: "https://x.com/prajwal_ai_vibe" },
+  { label: "Threads", href: "https://www.threads.com/@prajwal_ai_vibes" },
 ];
 
 export function Footer() {
@@ -24,17 +25,19 @@ export function Footer() {
               Reach out
             </div>
             <a
-              href="mailto:hello@prajwalpranu.com"
+              href="mailto:prajwalpranu49@yahoo.com"
               className="font-display block text-2xl hover:text-gradient md:text-4xl"
             >
-              hello@prajwalpranu.com
+              prajwalpranu49@yahoo.com
             </a>
           </div>
-          <ul className="grid grid-cols-1 gap-4 md:grid-cols-3">
+          <ul className="grid grid-cols-2 gap-4 md:grid-cols-4">
             {links.map((l) => (
               <li key={l.label}>
                 <a
                   href={l.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group flex items-center justify-between rounded-lg border border-border bg-card px-4 py-3 transition hover:border-primary/60"
                 >
                   <span className="font-mono-accent text-xs uppercase tracking-[0.25em]">
