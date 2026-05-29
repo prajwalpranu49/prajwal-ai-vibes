@@ -35,9 +35,9 @@ export function HeroVideo() {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background" />
       <div className="pointer-events-none absolute inset-0 bg-mesh opacity-60" />
 
-      {/* fixed top bar (clickable on all devices) */}
-      <div className="fixed inset-x-0 top-0 z-50 border-b border-border/40 bg-background/70 backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 md:px-12 md:py-4">
+      {/* fixed top bar — glassmorphism (clickable on all devices) */}
+      <div className="pointer-events-auto fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-background/40 backdrop-blur-xl backdrop-saturate-150 shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+        <div className="pointer-events-auto mx-auto flex max-w-7xl items-center gap-4 px-4 py-3 md:px-12 md:py-4">
           <nav className="flex flex-1 items-center gap-5 overflow-x-auto font-mono-accent text-[10px] uppercase tracking-[0.25em] text-muted-foreground md:justify-center md:gap-8 md:text-xs [&::-webkit-scrollbar]:hidden">
             {navLinks.map((l) => (
               <Link
