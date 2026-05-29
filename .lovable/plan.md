@@ -1,24 +1,33 @@
-## Changes
+## Plan
 
-### 1. Top nav (HeroVideo.tsx)
-- Remove the "Prajwal // Pranu" wordmark on the left.
-- Replace nav with: Home, About Us, Products / Services, Blogs, Contact Us.
-- Links scroll to existing sections where possible: Home → `#top`, About Us → `#about`, Products / Services → `#work`, Contact Us → `#contact`. Blogs → `#blogs` (placeholder anchor; no new page in this pass).
-- Keep the mute toggle on the right; move nav to center for balance.
-- On mobile (small viewport), collapse nav into a simple hamburger menu (since the viewport is 458px wide).
+### 1. Sticky, clickable nav across all devices (HeroVideo.tsx)
+- Convert the absolute top bar into a `fixed` top header (z-50, backdrop-blur, subtle bg) so it stays visible on scroll on every viewport.
+- Show the nav on mobile too (currently `hidden md:flex`). Use a compact horizontal scroll row on small screens with the same links, keeping the mute button on the right.
+- Ensure mute button and all nav links remain clickable (no overlay intercepting clicks, `pointer-events` on overlays set to `none`).
+- Replace `#blogs` anchor with a real route link `/blogs`.
+- Add matching top padding to hero content so it isn't hidden under the fixed header.
 
-### 2. Work grid imagery (WorkGrid.tsx + new assets)
-- Generate 4 cinematic AI-styled images, one per work card, saved in `src/assets/`:
-  - `work-synthetic-dreams.jpg` — surreal AI dreamscape, violet/cyan glow
-  - `work-neon-hours.jpg` — neon-lit night city, magenta/teal
-  - `work-prompt-diaries.jpg` — abstract typographic / terminal-inspired visual
-  - `work-after-midnight.jpg` — moody cinematic portrait with motion blur
-- Import each in `WorkGrid.tsx`, render as a background `<img>` behind the existing gradient overlay so text stays legible.
-- Keep current card layout, hover glow, and overlay gradient.
+### 2. Contact page nav consistency (contact.tsx)
+- Make its header `fixed` (matches home).
+- Add "Blogs" → `/blogs` link.
+- Update email everywhere: `prajwalpranu49@yahoo.com` (mailto + display text).
+- Wire social icons to real URLs (Instagram, YouTube, X/Twitter) and add a Threads icon/link.
 
 ### 3. Footer (Footer.tsx)
-- Remove the "Email" item from the social links grid under "Reach out".
-- Keep Instagram, YouTube, X / Twitter (3 items). Adjust grid to `grid-cols-3` on desktop, `grid-cols-1` on mobile.
-- Keep the large `hello@prajwalpranu.com` mailto headline intact.
+- Update mailto + display email to `prajwalpranu49@yahoo.com`.
+- Replace placeholder `#` hrefs with real URLs for Instagram, YouTube, X/Twitter.
+- Add a 4th link: Threads → `https://www.threads.com/@prajwal_ai_vibes`. Grid becomes `grid-cols-2 md:grid-cols-4`.
+- Links open in new tab (`target="_blank"`, `rel="noopener noreferrer"`).
 
-No other sections, routes, or backend logic change.
+### 4. New Blogs route (src/routes/blogs.tsx)
+- New page at `/blogs` with the same fixed header + footer styling.
+- Hero ("Blogs — Notes from the edit bay") + a placeholder grid of 3 sample post cards (title, date, excerpt, "Coming soon" tag) so the section feels alive until real posts are added.
+- Distinct `head()` meta (title/description/og).
+
+### Social URLs used
+- Instagram: https://www.instagram.com/prajwal_ai_vibes/
+- YouTube: https://www.youtube.com/@prajwalpranu
+- X/Twitter: https://x.com/prajwal_ai_vibe
+- Threads: https://www.threads.com/@prajwal_ai_vibes
+
+No backend changes.
