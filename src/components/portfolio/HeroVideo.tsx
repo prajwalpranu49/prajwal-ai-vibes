@@ -62,7 +62,7 @@ export function HeroVideo() {
       {/* hero copy */}
       <div className="relative z-10 flex h-full flex-col justify-end px-6 pb-20 md:px-12 md:pb-28">
         <div className="font-mono-accent text-xs uppercase tracking-[0.3em] text-accent">
-          AI Creator · Editor · Visual Director
+          AI Creator · Editor · Visual Director ✨
         </div>
         <h1 className="font-display mt-4 text-5xl font-semibold leading-[0.95] md:text-8xl lg:text-[10rem]">
           Prajwal <span className="text-gradient">Pranu</span>
