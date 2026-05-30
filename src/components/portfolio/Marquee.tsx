@@ -10,7 +10,7 @@ export function Marquee() {
         {[...tools, ...tools, ...tools].map((t, i) => (
           <span key={i} className="flex items-center gap-12">
             <span>{t}</span>
-            <span className="text-accent">◆</span>
+            <span className="text-accent">✨</span>
           </span>
         ))}
       </div>
