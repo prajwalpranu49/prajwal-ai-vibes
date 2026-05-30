@@ -69,13 +69,13 @@ export function HeroVideo() {
         </h1>
         <p className="mt-6 max-w-xl text-base text-muted-foreground md:text-lg">
           Crafting AI-driven stories, viral edits and cinematic visuals
-          that move at the speed of culture.
+          that move at the speed of culture. 🚀🎬
         </p>
       </div>
 
       {/* scroll cue */}
       <div className="absolute bottom-6 left-1/2 z-10 -translate-x-1/2 font-mono-accent text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
-        Scroll
+        Scroll ↓
       </div>
     </section>
   );
