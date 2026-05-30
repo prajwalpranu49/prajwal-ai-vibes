@@ -12,17 +12,17 @@ export function Footer() {
     <footer id="contact" className="relative px-6 py-32 md:px-12 md:py-40">
       <div className="mx-auto max-w-7xl">
         <div className="font-mono-accent text-xs uppercase tracking-[0.3em] text-accent">
-          Let's build
+          Let's build 🚀
         </div>
         <h2 className="font-display mt-4 text-5xl font-semibold leading-[0.95] md:text-8xl">
-          Have an idea? <br />
-          <span className="text-gradient">Let's make it move.</span>
+          Have an idea? 🧠 <br />
+          <span className="text-gradient">Let's make it move. ⚡</span>
         </h2>
 
         <div className="mt-16 grid gap-8 border-t border-border pt-10 md:grid-cols-2">
           <div className="space-y-2">
             <div className="font-mono-accent text-[11px] uppercase tracking-[0.3em] text-muted-foreground">
-              Reach out
+              Reach out 📬
             </div>
             <a
               href="mailto:prajwalpranu49@yahoo.com"
@@ -51,8 +51,8 @@ export function Footer() {
         </div>
 
         <div className="mt-20 flex items-center justify-between font-mono-accent text-[11px] uppercase tracking-[0.3em] text-muted-foreground">
-          <span>© 2026 Prajwal Pranu</span>
-          <span>Built with care</span>
+          <span>© 2026 Prajwal Pranu 🌟</span>
+          <span>Built with care 💜</span>
         </div>
       </div>
     </footer>

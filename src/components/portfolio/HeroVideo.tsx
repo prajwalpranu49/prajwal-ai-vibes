@@ -62,20 +62,20 @@ export function HeroVideo() {
       {/* hero copy */}
       <div className="relative z-10 flex h-full flex-col justify-end px-6 pb-20 md:px-12 md:pb-28">
         <div className="font-mono-accent text-xs uppercase tracking-[0.3em] text-accent">
-          AI Creator · Editor · Visual Director
+          AI Creator · Editor · Visual Director ✨
         </div>
         <h1 className="font-display mt-4 text-5xl font-semibold leading-[0.95] md:text-8xl lg:text-[10rem]">
           Prajwal <span className="text-gradient">Pranu</span>
         </h1>
         <p className="mt-6 max-w-xl text-base text-muted-foreground md:text-lg">
           Crafting AI-driven stories, viral edits and cinematic visuals
-          that move at the speed of culture.
+          that move at the speed of culture. 🚀🎬
         </p>
       </div>
 
       {/* scroll cue */}
       <div className="absolute bottom-6 left-1/2 z-10 -translate-x-1/2 font-mono-accent text-[10px] uppercase tracking-[0.4em] text-muted-foreground">
-        Scroll
+        Scroll ↓
       </div>
     </section>
   );

@@ -4,10 +4,10 @@ import promptDiaries from "@/assets/work-prompt-diaries.jpg";
 import afterMidnight from "@/assets/work-after-midnight.jpg";
 
 const works = [
-  { tag: "AI · Short Film", title: "Synthetic Dreams", meta: "2026 · Director / Edit", image: syntheticDreams },
-  { tag: "Reel · Brand", title: "Neon Hours", meta: "2026 · Edit / Color", image: neonHours },
-  { tag: "AI · Series", title: "Prompt Diaries", meta: "2025 · Creator", image: promptDiaries },
-  { tag: "Music Video", title: "After Midnight", meta: "2025 · Edit / VFX", image: afterMidnight },
+  { tag: "AI · Short Film 🎬", title: "Synthetic Dreams", meta: "2026 · Director / Edit ✨", image: syntheticDreams },
+  { tag: "Reel · Brand 💎", title: "Neon Hours", meta: "2026 · Edit / Color 🎨", image: neonHours },
+  { tag: "AI · Series 🤖", title: "Prompt Diaries", meta: "2025 · Creator 🔥", image: promptDiaries },
+  { tag: "Music Video 🎵", title: "After Midnight", meta: "2025 · Edit / VFX ⚡", image: afterMidnight },
 ];
 
 export function WorkGrid() {
@@ -17,14 +17,14 @@ export function WorkGrid() {
         <div className="mb-16 flex items-end justify-between">
           <div>
             <div className="font-mono-accent text-xs uppercase tracking-[0.3em] text-accent">
-              Selected work
+              Selected work 💼
             </div>
             <h2 className="font-display mt-4 text-4xl font-semibold md:text-6xl">
-              Recent <span className="text-gradient">drops</span>
+              Recent <span className="text-gradient">drops 🚀</span>
             </h2>
           </div>
           <div className="hidden font-mono-accent text-xs uppercase tracking-[0.3em] text-muted-foreground md:block">
-            2025 — 2026
+            2025 — 2026 🔮
           </div>
         </div>
 
