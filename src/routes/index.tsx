@@ -35,13 +35,6 @@ function Index() {
           className="pointer-events-none absolute right-4 top-8 hidden w-28 select-none drop-shadow-2xl md:block lg:w-36"
           style={{ animation: "chibi-float 6s ease-in-out infinite" }}
         />
-        <span
-          aria-hidden
-          className="pointer-events-none absolute right-20 top-32 hidden text-2xl md:block"
-          style={{ animation: "chibi-float 5s ease-in-out infinite" }}
-        >
-          ✨
-        </span>
       </div>
       <div className="relative">
         <WorkGrid />
@@ -52,13 +45,6 @@ function Index() {
           className="pointer-events-none absolute -left-6 top-16 hidden w-32 -rotate-6 select-none drop-shadow-2xl md:block lg:w-44"
           style={{ animation: "chibi-float 7s ease-in-out infinite" }}
         />
-        <span
-          aria-hidden
-          className="pointer-events-none absolute right-12 top-40 hidden text-xl md:block"
-          style={{ animation: "chibi-float 4s ease-in-out infinite" }}
-        >
-          🔥
-        </span>
       </div>
       <div className="relative">
         <Footer />
@@ -69,13 +55,6 @@ function Index() {
           className="pointer-events-none absolute right-6 top-10 hidden w-28 rotate-3 select-none drop-shadow-2xl md:block lg:w-36"
           style={{ animation: "chibi-float 5.5s ease-in-out infinite" }}
         />
-        <span
-          aria-hidden
-          className="pointer-events-none absolute left-16 top-24 hidden text-2xl md:block"
-          style={{ animation: "chibi-float 6s ease-in-out infinite" }}
-        >
-          💜
-        </span>
       </div>
       <AIChat />
       <style>{`
