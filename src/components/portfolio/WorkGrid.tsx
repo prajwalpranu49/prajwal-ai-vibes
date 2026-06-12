@@ -4,10 +4,10 @@ import promptDiaries from "@/assets/work-prompt-diaries.jpg";
 import afterMidnight from "@/assets/work-after-midnight.jpg";
 
 const works = [
-  { tag: "AI · Short Film", title: "Synthetic Dreams", meta: "2026 · Director / Edit", image: syntheticDreams },
-  { tag: "Reel · Brand", title: "Neon Hours", meta: "2026 · Edit / Color", image: neonHours },
-  { tag: "AI · Series", title: "Prompt Diaries", meta: "2025 · Creator", image: promptDiaries },
-  { tag: "Music Video", title: "After Midnight", meta: "2025 · Edit / VFX", image: afterMidnight },
+  { tag: "AI · Short Film", title: "Synthetic Dreams", meta: "2026 · Director / Edit", image: syntheticDreams, alt: "AI-generated short film still — Synthetic Dreams by Prajwal Pranu" },
+  { tag: "Reel · Brand", title: "Neon Hours", meta: "2026 · Edit / Color", image: neonHours, alt: "Cinematic neon-lit brand reel still — Neon Hours edit by Prajwal Pranu" },
+  { tag: "AI · Series", title: "Prompt Diaries", meta: "2025 · Creator", image: promptDiaries, alt: "AI video series cover — Prompt Diaries by Prajwal Pranu" },
+  { tag: "Music Video", title: "After Midnight", meta: "2025 · Edit / VFX", image: afterMidnight, alt: "Music video still with VFX — After Midnight edit by Prajwal Pranu" },
 ];
 
 export function WorkGrid() {
@@ -36,7 +36,7 @@ export function WorkGrid() {
             >
               <img
                 src={w.image}
-                alt={w.title}
+                alt={w.alt}
                 loading="lazy"
                 width={1024}
                 height={1024}
