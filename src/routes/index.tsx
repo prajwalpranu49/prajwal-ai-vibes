@@ -12,10 +12,34 @@ import chibiCool from "@/assets/chibi-cool.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Prajwal Pranu — AI Creator, Viral Edits & Cinematic Visuals" },
-      { name: "description", content: "Portfolio of Prajwal Pranu: AI creator, viral video editor, and cinematic visual director crafting next-gen stories." },
-      { property: "og:title", content: "Prajwal Pranu — AI Creator & Visual Director" },
-      { property: "og:description", content: "AI-driven storytelling, viral edits, and cinematic visuals." },
+      { title: "Prajwal Pranu — AI Creator, Viral Editor & Cinematic Director" },
+      { name: "description", content: "Portfolio of Prajwal Pranu — AI creator, viral video editor and cinematic visual director. AI-driven short films, scroll-stopping reels and film-grade visuals." },
+      { property: "og:title", content: "Prajwal Pranu — AI Creator, Viral Editor & Cinematic Director" },
+      { property: "og:description", content: "AI-driven storytelling, viral edits and cinematic visuals by Prajwal Pranu." },
+      { property: "og:url", content: "https://prajwal-ai-vibes.lovable.app/" },
+      { property: "og:type", content: "website" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://prajwal-ai-vibes.lovable.app/" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Prajwal Pranu",
+          url: "https://prajwal-ai-vibes.lovable.app",
+          jobTitle: "AI Creator, Viral Video Editor & Cinematic Visual Director",
+          description: "AI-driven stories, viral edits and cinematic visuals.",
+          sameAs: [
+            "https://www.instagram.com/prajwal_ai_vibes/",
+            "https://www.youtube.com/@prajwalpranu",
+            "https://x.com/prajwal_ai_vibe",
+            "https://www.threads.com/@prajwal_ai_vibes",
+          ],
+        }),
+      },
     ],
   }),
   component: Index,
