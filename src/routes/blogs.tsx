@@ -4,10 +4,28 @@ import { ArrowLeft, Volume2 } from "lucide-react";
 export const Route = createFileRoute("/blogs")({
   head: () => ({
     meta: [
-      { title: "Blogs — Prajwal Pranu" },
-      { name: "description", content: "Notes from the edit bay — AI workflows, viral edit breakdowns, and cinematic visual experiments by Prajwal Pranu." },
-      { property: "og:title", content: "Blogs — Prajwal Pranu" },
-      { property: "og:description", content: "Notes from the edit bay — AI workflows, viral edits & cinematic visuals." },
+      { title: "Blog — AI Workflows, Viral Edits & Cinematic Visuals | Prajwal Pranu" },
+      { name: "description", content: "Notes from the edit bay — AI video workflows, prompt-to-frame pipelines, viral edit breakdowns and color science for cinematic AI visuals." },
+      { property: "og:title", content: "Blog — AI Workflows, Viral Edits & Cinematic Visuals" },
+      { property: "og:description", content: "AI video workflows, viral edit breakdowns and cinematic visual experiments by Prajwal Pranu." },
+      { property: "og:url", content: "https://prajwal-ai-vibes.lovable.app/blogs" },
+      { property: "og:type", content: "website" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://prajwal-ai-vibes.lovable.app/blogs" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Blog",
+          name: "Prajwal Pranu — Field Notes",
+          url: "https://prajwal-ai-vibes.lovable.app/blogs",
+          description: "AI video workflows, viral edits and cinematic visual experiments.",
+          author: { "@type": "Person", name: "Prajwal Pranu" },
+        }),
+      },
     ],
   }),
   component: BlogsPage,
