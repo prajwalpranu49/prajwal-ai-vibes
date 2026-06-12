@@ -5,10 +5,38 @@ import { useState } from "react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Prajwal Pranu" },
-      { name: "description", content: "Get in touch with Prajwal Pranu. AI Creator, Viral Edits & Creative Visuals. Cinematic vibes only." },
-      { property: "og:title", content: "Contact — Prajwal Pranu" },
-      { property: "og:description", content: "Get in touch with Prajwal Pranu. AI Creator, Viral Edits & Creative Visuals." },
+      { title: "Contact Prajwal Pranu — Hire an AI Creator & Video Editor" },
+      { name: "description", content: "Hire Prajwal Pranu for AI-driven storytelling, viral short-form edits and cinematic visual direction. Get in touch for collaborations." },
+      { property: "og:title", content: "Contact Prajwal Pranu — Hire an AI Creator & Video Editor" },
+      { property: "og:description", content: "Hire Prajwal Pranu for AI storytelling, viral edits and cinematic visuals." },
+      { property: "og:url", content: "https://prajwal-ai-vibes.lovable.app/contact" },
+      { property: "og:type", content: "website" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://prajwal-ai-vibes.lovable.app/contact" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          name: "Contact Prajwal Pranu",
+          url: "https://prajwal-ai-vibes.lovable.app/contact",
+          mainEntity: {
+            "@type": "Person",
+            name: "Prajwal Pranu",
+            email: "prajwalpranu49@yahoo.com",
+            jobTitle: "AI Creator, Viral Video Editor & Cinematic Visual Director",
+            sameAs: [
+              "https://www.instagram.com/prajwal_ai_vibes/",
+              "https://www.youtube.com/@prajwalpranu",
+              "https://x.com/prajwal_ai_vibe",
+              "https://www.threads.com/@prajwal_ai_vibes",
+            ],
+          },
+        }),
+      },
     ],
   }),
   component: ContactPage,
